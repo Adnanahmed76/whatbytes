@@ -1,16 +1,54 @@
-# taskmanagementforgigworker
+# Gig Task Manager App – Flutter Developer Intern Assignment
 
-A new Flutter project.
+## 📄 Overview
 
-## Getting Started
+This is a task management mobile application built as part of the internship assignment for **Whatbytes**. The app is designed for gig workers to manage their tasks efficiently with features such as authentication, task CRUD operations, task filtering, and responsive UI design.
 
-This project is a starting point for a Flutter application.
+This submission demonstrates my skills in Flutter, state management using **Riverpod/BLoC**, and clean architecture principles.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🚀 Features Implemented
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### ✅ User Authentication (via Firebase)
+- Email/password registration and login
+- Form validation and error messages for invalid credentials
+- Firebase Authentication integration
+
+### 📝 Task Management
+- Create, edit, delete, and view tasks
+- Task fields: Title, Description, Due Date, Priority (Low, Medium, High)
+- Tasks stored using Firebase Cloud Firestore
+- Toggle task status (Completed / Incomplete)
+
+### 🔍 Task Filtering & Sorting
+- Filter by priority and completion status
+- Tasks sorted by due date (earliest to latest)
+
+### 🎨 User Interface
+- Clean, responsive UI based on Material Design
+- Adaptive design for Android and iOS
+- Follows best practices for spacing, typography, and color usage
+
+---
+
+## 🧱 Architecture
+
+- **Flutter** for UI and logic
+- **Clean Architecture** with domain, data, and presentation layers
+- **Firebase Firestore** for backend data storage
+- **Firebase Auth** for user authentication
+
+---
+
+## 📁 Folder Structure
+
+```plaintext
+lib/
+├── core/
+├── data/
+├── domain/
+├── presentation/
+│   ├── screens/
+│   ├── widgets/
+├── main.dart
